@@ -1,5 +1,6 @@
 // Write your code here
 import {Component} from 'react'
+import './index.css'
 
 class Welcome extends Component {
   state = {isSubscribed: false}
@@ -13,10 +14,10 @@ class Welcome extends Component {
   render() {
     const buttonText = this.getButtonText()
     return (
-      <div>
-        <h1>Welcome</h1>
-        <p>Thank you!Happy Learning</p>
-        <button onClick={this.buttonText} type="button">
+      <div className="bg-container">
+        <h1 className="heading">Welcome</h1>
+        <p className="para">Thank you!Happy Learning</p>
+        <button className="button" onClick={this.buttonText} type="button">
           {buttonText}
         </button>
       </div>
